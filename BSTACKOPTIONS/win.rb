@@ -8,7 +8,7 @@ capabilities = {
 		"osVersion" => "10",
 		"projectName" => "Sample Test",
 		"buildName" => "Sample_test",
-    "uploadMedia" => ["media://<FILE_HASHED_ID>"]
+		"uploadMedia" => ["media://<FILE_HASHED_ID>"]
 	},
 	"browserName" => "IE",
 	"browserVersion" => "11.0",
