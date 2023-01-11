@@ -20,10 +20,6 @@ begin
     :url => "https://YOUR_USERNAME:YOUR_ACCESSKEY@hub-cloud.browserstack.com/wd/hub",
     :capabilities => capabilities
   )
-  driver.file_detector = lambda do |args|
-    str = args.first.to_s
-    str if File.exist?(str)
-  end
   driver.navigate.to "http://www.fileconvoy.com"
   driver.find_element(:id, "upfile_0").send_keys("C:\\Users\\hello\\Documents\\<MEDIA_FOLDER>\\<IMAGE_NAME>.<IMAGE_EXT>")  #File path in remote machine
   # MEDIA_FOLDER will be depended on file type of uploadMedia passed, values can be "video", "images", "audio"
